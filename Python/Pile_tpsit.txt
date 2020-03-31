@@ -1,0 +1,11 @@
+
+	Struct stack_node * pop(struct stack_node **head){
+		struct stack_node *ret = *head;
+			if(is_empty(*head)){
+				return NULL;
+			}else{
+				*head = ret->next;
+
+			}
+		return ret;
+	}
